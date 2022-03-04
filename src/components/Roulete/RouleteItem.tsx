@@ -1,13 +1,13 @@
 import { Flex, Text, Link as LinkChakra } from "@chakra-ui/react";
 import Link from "next/link";
 
-interface CarouselItemProps {
+interface RouleteItemProps {
   image: string;
   title: string;
   description: string;
 }
 
-export function CarouselItem({ image, title, description }: CarouselItemProps) {
+export function RouleteItem({ image, title, description }: RouleteItemProps) {
   return (
     <Link href="/continent" passHref>
       <LinkChakra colorScheme="blackAlpha" color="white">
@@ -23,7 +23,7 @@ export function CarouselItem({ image, title, description }: CarouselItemProps) {
         >
           <Text
             as="h2"
-            color="text.ligth"
+            color="text.light"
             fontSize="5xl"
             fontWeight="bold"
             lineHeight="72px"

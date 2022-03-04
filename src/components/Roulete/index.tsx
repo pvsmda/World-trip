@@ -7,7 +7,7 @@ import "swiper/css";
 
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { CarouselItem } from "./RouleteItem";
+import { RouleteItem } from "./RouleteItem";
 
 export function Carousel() {
   return (
@@ -23,21 +23,21 @@ export function Carousel() {
         onSlideChange={() => console.log("slide change")}
       >
         <SwiperSlide>
-          <CarouselItem
+          <RouleteItem
             image="/continenteeuropeu.png"
             title="Europa"
             description="O continente mais antigo."
           />
         </SwiperSlide>
         <SwiperSlide>
-          <CarouselItem
+          <RouleteItem
             image="/america-norte.jpg"
             title="América do Norte"
             description="O continente mais moderno."
           />
         </SwiperSlide>
         <SwiperSlide>
-          <CarouselItem
+          <RouleteItem
             image="/america-sul.jpg"
             title="América do Sul"
             description="O continente mais tropical."
